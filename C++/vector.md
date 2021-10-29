@@ -9,3 +9,9 @@ vector<string> strArray(str, str+length);
 int arr[] = {0, 1, 0, 3, 12};
 vector<int> vec(arr, arr + sizeof(arr)/sizeof(int));
 ```
+### 初始化vector memo 为-1
+```
+int n = 10;
+vector<int> memo(n + 1, -1);
+cout << memo.size() << endl; // 11
+```
