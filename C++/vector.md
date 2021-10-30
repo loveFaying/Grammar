@@ -53,7 +53,7 @@ if ( binary_search(vec.begin(), vec.end(), 100) )
 else 
     cout << "No" << endl;
 ```
-### vector< vector<int> > v
+### vector< vector\<int\> > v
 ```C++
 vector< vector<int> >  v;
 
@@ -83,6 +83,51 @@ for (vector<vector<int>>::iterator it = v.begin(); it != v.end(); it++) {
     cout << endl;
 }
 ```
+### 统计vector\<int\>中指定元素的个数
+```C++
+vector<int> v;
+v.push_back(1);
+v.push_back(2);
+v.push_back(4);
+v.push_back(5);
+v.push_back(3);
+v.push_back(4);
+v.push_back(4);
 
+int num = count(v.begin(), v.end(), 4);
 
+cout << "4的个数为： " << num << endl;
+```
+### 按照条件统计元素的个数
+```C++
+class Greater4
+{
+public:
+	bool operator()(int val)
+	{
+		return val >= 4;
+	}
+};
+// 大于4元素的个数
+int num = count_if(v.begin(), v.end(), Greater4()); 
+```
+### 将vector\<int\>反转、替换
+```C++
+vector<int> v;
+reverse(v.begin(), v.end());
+replace(v.begin(), v.end(), 20,2000); // 将v中的元素20替换成2000
+```
+### 将vector\<int\> 进行条件替换
+```C++
+class ReplaceGreater30
+{
+public:
+	bool operator()(int val)
+	{
+		return val >= 30;
+	}
 
+};
+//将容器中大于等于的30 替换成 3000
+replace_if(v.begin(), v.end(), ReplaceGreater30(), 3000);
+```
