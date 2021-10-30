@@ -31,8 +31,8 @@ int n = sizeof(arr)/sizeof(int);
 vector<int> vec(arr, arr+n);
 sort(vec.begin(), vec.end()); // 从小到大
 sort(vec.begin(), vec.end(), greater<>()); // 从大到小
-vector<int>::iterator biggest = max_element(begin(vec), end(vec));
-auto smallest = min_element(vec.begin(), vec.end());
+vector<int>::iterator biggest = max_element(begin(vec), end(vec)); // 9 0
+auto smallest = min_element(vec.begin(), vec.end()); // 0 9
 cout << *biggest << " " << *smallest << " " << endl;
 cout << distance(vec.begin(), biggest) << " " << distance(vec.begin(), smallest) << endl;
 ```
