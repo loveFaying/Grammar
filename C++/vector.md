@@ -36,3 +36,17 @@ auto smallest = min_element(vec.begin(), vec.end()); // 0 9
 cout << *biggest << " " << *smallest << " " << endl;
 cout << distance(vec.begin(), biggest) << " " << distance(vec.begin(), smallest) << endl;
 ```
+### 对vector\<int\>进行二分查找
+```C++
+int arr[]= {4,10,11,30,69,70,96,100};
+int n = sizeof(arr)/sizeof(int);
+vector<int> vec(arr, arr+n);
+if ( binary_search(vec.begin(), vec.end(), 100) )
+    cout << "Yes" << endl;
+else 
+    cout << "No" << endl;
+```
+
+
+
+
