@@ -17,11 +17,18 @@ cout << memo.size() << endl; // 11
 ```
 ### 输出vector\<int\>
 ```C++
+// 方法1
 void printVector(vector<int>& arr){
     for (auto val : arr)
         cout << val << " ";
     cout << endl;
-} 
+}
+
+// 方法2
+void MyPrint(int val){
+    cout << val << " ";
+}
+for_each(vec.begin(), vec.end(), MyPrint);
 ```
 ### 对vector\<int\>进行排序、输出最大值最小值、最大值最小值在数组中的位置
 ```C++
