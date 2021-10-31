@@ -3,6 +3,9 @@
 string str[]={"hello","world","hello","hello","world","hello","xyz","csl","edg","rng"};
 int length = sizeof(str)/sizeof(string); // 10
 vector<string> strArray(str, str+length);
+
+vector<string> vec{"houyw", "houyw2", "houyw3"};
+vector<int> vec2{1,2,3,4};
 ```
 ### 使用arr[] 初始化 vector\<int\>
 ```C++
@@ -20,9 +23,13 @@ cout << memo.size() << endl; // 11
 // 方法1
 void printVector(vector<int>& arr){
     for (auto val : arr)
-        cout << val << " ";
+        cout << val << " "; // val是arr中的每个元素
     cout << endl;
 }
+// 如果需要改变容器中的值需要加上引用
+vector<int> arr;
+for(auto& n: arr)  // 只遍历不修改 const auto& n: arr
+	cout << n++ << " ";
 
 // 方法2
 void MyPrint(int val){
@@ -130,4 +137,11 @@ public:
 };
 //将容器中大于等于的30 替换成 3000
 replace_if(v.begin(), v.end(), ReplaceGreater30(), 3000);
+```
+### emplace_back
+简而言之，emplace_back()是C11标准中的函数，用法和功能与push_back一样，执行效率比push_back高。
+```C++
+vector<string> res;
+res.push_back(word);
+res.emplace_back(word);
 ```
