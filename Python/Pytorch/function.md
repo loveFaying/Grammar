@@ -49,9 +49,9 @@ $ q(x) $ : 拟合分布
 
 $$
 \begin{align}
-D_{DK}(P||Q) &= -\sum_{i}P(i)\ln \frac{Q(i)}{P(i)}  
-&= \sum_{i}P(i)\ln \frac{P(i)}{Q(i)}   
-&= \sum_{i=1}^{N}p(x_i) \cdot (\log p(x_i) - \log q(x_i))
+D_{DK}(P||Q) = -\sum_{i}P(i)\ln \frac{Q(i)}{P(i)}  
+= \sum_{i}P(i)\ln \frac{P(i)}{Q(i)}   
+= \sum_{i=1}^{N}p(x_i) \cdot (\log p(x_i) - \log q(x_i))
 \end{align}
 $$
 
