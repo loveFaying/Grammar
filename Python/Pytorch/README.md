@@ -4,7 +4,6 @@
 ### function.md
 - torch.numel
 - torch.clamp
-- torch.nn.functional.upsample
 - torch.nn.KLDivLoss
 
 ### model.md
