@@ -18,7 +18,7 @@ ic(tensor2.numel())
 ### torch.clamp(input, min=None, max=None, *, out=None) → Tensor
 
 **将input中的所有元素限制在 $[min, max]$ 中**
-* 若min是None，则无下界；若max是None，则无上届
+* 若min是None，则无下界；若max是None，则无上界
 
 ```python
 import torch 
@@ -38,7 +38,9 @@ ic(tensor.clamp(min=0.5, max=-0.5))
 ```
 
 ### torch.nn.functional.upsample(input, size=None, scale_factor=None,mode='nearest', align_corners=None)
+```
 
+```
 
 ### torch.nn.KLDivLoss(size_average=None, reduce=None, reduction='mean',log_target=False)
 
