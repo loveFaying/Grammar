@@ -23,3 +23,9 @@ torch.Size([3, 3, 3, 9])
 >>> repeat(a, 'c h w -> b c h w', b=5).shape
 torch.Size([5, 3, 9, 9])
 ```
+### swin-unet 中 PatchExpand 的操作
+```
+>>> a = torch.randn(12, 64, 64, 32)
+>>> rearrange(a, 'b h w (p1 p2 c)-> b (h p1) (w p2) c', p1=2, p2=2, c=32//4).shape
+torch.Size([12, 128, 128, 8])
+```
