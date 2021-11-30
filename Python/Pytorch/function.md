@@ -43,8 +43,10 @@ ic(tensor.clamp(min=0.5, max=-0.5))
 ### torch.nn.KLDivLoss(size_average=None, reduce=None, reduction='mean',log_target=False)
 
 **用于连续分布的距离度量，K-L散度值越小，说明这两个分布越相近**
-$$ p(x) $$ : 真实分布   
-$$ q(x) $$ : 拟合分布
+
+$$p(x)$$ : 真实分布   
+$$q(x)$$ : 拟合分布
+
 $$
 \begin{align}
 D_{DK}(P||Q) &= -\sum_{i}P(i)\ln \frac{Q(i)}{P(i)}  \\
