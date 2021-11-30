@@ -54,3 +54,5 @@ D_{DK}(P||Q) &= -\sum_{i}P(i)\ln \frac{Q(i)}{P(i)}  \\
 &= \sum_{i=1}^{N}p(x_i) \cdot (\log p(x_i) - \log q(x_i))
 \end{align}
 $$
+
+![1](http://latex.codecogs.com/svg.latex?p(x))
