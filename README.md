@@ -15,3 +15,6 @@
 - device.md
 - function.md
 - model.md
+
+#### Einope
+- function.md
